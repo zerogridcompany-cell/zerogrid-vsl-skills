@@ -9,7 +9,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from shots import SHOTS, BYID, REF, DOF, CHAR
 W = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); G = W + "/work/gen"; P = W + "/指示"
 os.makedirs(G, exist_ok=True); os.makedirs(P, exist_ok=True); os.makedirs(W + "/絵", exist_ok=True)
-PY = os.path.expanduser("~/.agents/skills/_env/venv/bin/python")
+PY = os.environ.get("ZACKD_PYTHON", sys.executable)
 LIMIT = 330
 
 ROLE = dict(

@@ -3,7 +3,7 @@ kind: person＝人の場面（段1〜5）/ cutp＝透けた体の断面（人あ
 end: ("edit", 変える所) / ("crop", 倍率, cx, cy) / ("still",) 動画にしない
 """
 import os
-R = os.path.expanduser("~/.agents/skills/ec-ad-ops/references/video-formats/zackdfilms/質感847/参考")
+R = os.environ.get("ZACKD_REF") or os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "参考")
 W0 = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 C = R + "/1_構図と質感/"
 REF = dict(
