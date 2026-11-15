@@ -131,8 +131,18 @@ def readings(kind):
     return [tuple(x) for x in d.get(kind, [])]
 
 
-# アプリに同梱した自社の音（効果音の Z と BGM。scripts/bundle-sounds.mjs）。ZG_SOUNDS はアプリが渡す
-SOUNDS = os.environ.get("ZG_SOUNDS") or ""
+# 自社の音の棚（効果音の Z と BGM）。ZG_SOUNDS で場所を渡す。無ければ、この道具の上のフォルダを順に見て「音の棚」を探す（リポジトリの一番上にある）
+def _find_sounds():
+    d = os.path.dirname(os.path.abspath(__file__))
+    for _ in range(12):
+        c = os.path.join(d, "音の棚")
+        if os.path.exists(os.path.join(c, "sounds.json")):
+            return c
+        d = os.path.dirname(d)
+    return ""
+
+
+SOUNDS = os.environ.get("ZG_SOUNDS") or _find_sounds()
 
 
 def _sounds():

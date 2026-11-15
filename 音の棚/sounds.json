@@ -1,0 +1,228 @@
+{
+ "_": "動画の音（自社で作った物だけ）。決まりは ec-ad-ops/references/video-formats/sound-rules.md。S/…（他社のパック）は同梱しない：s_fallback で Z の音に置きかえる",
+ "sfx_dir": "効果音",
+ "s_fallback": {
+  "01-場面転換のシュッ": "whoosh.wav",
+  "02-低いドン・着地": "don.wav",
+  "03-短い当たり": "pillowThump.wav",
+  "04-ポン・クリック・表示": "pop.wav",
+  "05-きらきら・うまくいった": "sparkle.wav",
+  "06-上がっていく音": "riserRumble.wav",
+  "07-お金・数字": "register.wav",
+  "08-物の音": "click.wav",
+  "09-緊張・こわい": "heartbeat.wav",
+  "11-映画風の切りかえ・当たり": "boom.wav"
+ },
+ "default_bgm": {
+  "zackdfilms": "W-MOOD-27"
+ },
+ "bgm": [
+  {
+   "id": "W-MOOD-01",
+   "file": "BGM/W-MOOD-01.m4a",
+   "title": "悲しいピアノの告白用BGM",
+   "mood": "2-悲しい・切ない",
+   "use": "後悔・告白・つらい毎日",
+   "sec": 45.01,
+   "lufs": -21.5
+  },
+  {
+   "id": "W-MOOD-02",
+   "file": "BGM/W-MOOD-02.m4a",
+   "title": "緊張感のある問題説明BGM",
+   "mood": "1-暗い・緊張",
+   "use": "問題・原因・深刻さ",
+   "sec": 44.08,
+   "lufs": -17.2
+  },
+  {
+   "id": "W-MOOD-03",
+   "file": "BGM/W-MOOD-03.m4a",
+   "title": "軽くコミカルな否定パートBGM",
+   "mood": "3-コミカル・軽い",
+   "use": "よくある対策の否定・つっこみ",
+   "sec": 44.96,
+   "lufs": -21.3
+  },
+  {
+   "id": "W-MOOD-04",
+   "file": "BGM/W-MOOD-04.m4a",
+   "title": "温かいlo-fiの解決BGM",
+   "mood": "4-温かい・安心",
+   "use": "解決・商品・使い方",
+   "sec": 44.9,
+   "lufs": -21.5
+  },
+  {
+   "id": "W-MOOD-05",
+   "file": "BGM/W-MOOD-05.m4a",
+   "title": "明るく軽いCTA用BGM",
+   "mood": "5-明るい・前向き",
+   "use": "ベネフィット・CTA",
+   "sec": 45.01,
+   "lufs": -22.9
+  },
+  {
+   "id": "W-MOOD-06",
+   "file": "BGM/W-MOOD-06.m4a",
+   "title": "軽く温かい説明用BGM",
+   "mood": "6-中立・説明",
+   "use": "軽い説明・ハウツー（単調になりやすい）",
+   "sec": 20,
+   "lufs": -28.7
+  },
+  {
+   "id": "W-MOOD-22",
+   "file": "BGM/W-MOOD-22.m4a",
+   "title": "半音で動く低音と秒針の緊張BGM",
+   "mood": "1-暗い・緊張",
+   "use": "問題・原因・ほかの手（元の見本に近い、低音が這う曲。低音が中心でスマホのスピーカーでは小さい）",
+   "sec": 59.98,
+   "lufs": -15.3
+  },
+  {
+   "id": "W-MOOD-23",
+   "file": "BGM/W-MOOD-23.m4a",
+   "title": "せり上がる危機感のBGM",
+   "mood": "1-暗い・緊張",
+   "use": "放置した先・危機感を一番強く出す段",
+   "sec": 44.97,
+   "lufs": -17.1
+  },
+  {
+   "id": "W-MOOD-24",
+   "file": "BGM/W-MOOD-24.m4a",
+   "title": "ほっとするピアノとパッドの解決BGM",
+   "mood": "4-温かい・安心",
+   "use": "解決・商品・使い方（緊張の後の安心）",
+   "sec": 44.94,
+   "lufs": -14.1
+  },
+  {
+   "id": "W-MOOD-25",
+   "file": "BGM/W-MOOD-25.m4a",
+   "title": "エレピと丸い低音の安心BGM",
+   "mood": "4-温かい・安心",
+   "use": "解決・商品・使い方",
+   "sec": 44.99,
+   "lufs": -16.6
+  },
+  {
+   "id": "W-MOOD-26",
+   "file": "BGM/W-MOOD-26.m4a",
+   "title": "暗いパッドと心拍の緊張BGM",
+   "mood": "1-暗い・緊張",
+   "use": "問題・原因・ほかの手（型v1の既定の敷き。緊張の判定が一番強く、スマホのスピーカーでも聞こえる）",
+   "sec": 59.91,
+   "lufs": -14.5
+  },
+  {
+   "id": "W-MOOD-27",
+   "file": "BGM/W-MOOD-27.m4a",
+   "title": "歩く低音と木の刻みの忍び足BGM",
+   "mood": "7-忍び足・好奇心（Zack D型）",
+   "use": "型v1（Zack D型）で、おひさまパンツ式に1曲で通す時の敷き",
+   "sec": 60,
+   "lufs": -17.7
+  },
+  {
+   "id": "W-MOOD-28",
+   "file": "BGM/W-MOOD-28.m4a",
+   "title": "こもった低音のアルペジオと秒針の忍び足BGM",
+   "mood": "7-忍び足・好奇心（Zack D型）",
+   "use": "型v1（Zack D型）で、おひさまパンツ式に1曲で通す時の敷き",
+   "sec": 60.04,
+   "lufs": -20.8
+  },
+  {
+   "id": "W-MOOD-30",
+   "file": "BGM/W-MOOD-30.m4a",
+   "title": "伸びる不協和の弦と脈の緊張BGM",
+   "mood": "1-暗い・緊張",
+   "use": "問題・原因・放置した先",
+   "sec": 59.98,
+   "lufs": -19
+  },
+  {
+   "id": "W-MOOD-31",
+   "file": "BGM/W-MOOD-31.m4a",
+   "title": "冷たい脈と秒針の緊張BGM",
+   "mood": "1-暗い・緊張",
+   "use": "問題・原因・放置した先",
+   "sec": 59.98,
+   "lufs": -14.1
+  },
+  {
+   "id": "W-MOOD-32",
+   "file": "BGM/W-MOOD-32.m4a",
+   "title": "這うベースと刻みの緊張BGM A",
+   "mood": "1-暗い・緊張",
+   "use": "問題・原因・ほかの手",
+   "sec": 59.98,
+   "lufs": -19
+  },
+  {
+   "id": "W-MOOD-33",
+   "file": "BGM/W-MOOD-33.m4a",
+   "title": "這うベースと刻みの緊張BGM B",
+   "mood": "1-暗い・緊張",
+   "use": "問題・原因・ほかの手",
+   "sec": 60.04,
+   "lufs": -15.4
+  },
+  {
+   "id": "W-MOOD-34",
+   "file": "BGM/W-MOOD-34.m4a",
+   "title": "中音域で這う刻みの緊張BGM",
+   "mood": "1-暗い・緊張",
+   "use": "問題・原因・ほかの手",
+   "sec": 59.97,
+   "lufs": -18.5
+  },
+  {
+   "id": "W-MOOD-35",
+   "file": "BGM/W-MOOD-35.m4a",
+   "title": "チェロの刻みと秒針の緊張BGM",
+   "mood": "1-暗い・緊張",
+   "use": "問題・原因・ほかの手",
+   "sec": 59.98,
+   "lufs": -20.5
+  },
+  {
+   "id": "W-MOOD-36",
+   "file": "BGM/W-MOOD-36.m4a",
+   "title": "弦のトレモロが迫る危機感のBGM",
+   "mood": "1-暗い・緊張",
+   "use": "放置した先・危機感を強く出す段",
+   "sec": 45,
+   "lufs": -18.1
+  },
+  {
+   "id": "W-MOOD-37",
+   "file": "BGM/W-MOOD-37.m4a",
+   "title": "マリンバと丸い低音の安心BGM",
+   "mood": "4-温かい・安心",
+   "use": "解決・商品・使い方",
+   "sec": 44.99,
+   "lufs": -14.2
+  },
+  {
+   "id": "W-MOOD-38",
+   "file": "BGM/W-MOOD-38.m4a",
+   "title": "軽く前向きな締めのBGM",
+   "mood": "5-明るい・前向き",
+   "use": "先の姿・CTA",
+   "sec": 44.99,
+   "lufs": -15.5
+  },
+  {
+   "id": "W-MOOD-39",
+   "file": "BGM/W-MOOD-39.m4a",
+   "title": "前向きなピアノとギターの締めBGM",
+   "mood": "5-明るい・前向き",
+   "use": "先の姿・CTA",
+   "sec": 44.99,
+   "lufs": -18.2
+  }
+ ]
+}
